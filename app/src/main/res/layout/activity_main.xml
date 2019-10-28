@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mygradient"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerId">
+    </com.google.android.gms.ads.AdView>
+
+    <Space
+        android:layout_height="10dp"
+        android:layout_width="0dp" />
+
+    <ImageView
+        android:layout_height="250dp"
+        android:layout_width="250dp"
+
+        android:contentDescription="TODO"
+        android:layout_gravity="center"
+        android:background="@drawable/bulb2"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_game"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFF"
+                android:background="@drawable/ripple_effect"
+                android:padding="-5dp"
+                android:text="@string/start_game" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:padding="-5dp"
+                android:text="@string/exit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
